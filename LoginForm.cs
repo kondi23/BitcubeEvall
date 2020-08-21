@@ -72,7 +72,7 @@ namespace BCLoginRegistrationForm
                 SqlConnection sqlConn = new SqlConnection("Data Source=DESKTOP-0997K4M;Initial Catalog=UserRegistrationDB;Integrated Security=True");
                 SqlCommand sqlComm = new SqlCommand("SELECT * FROM tblUser WHERE EmailAddress = @EmailAddress and Password = @Password", sqlConn);
                 sqlConn.Open();
-                //sqlComm.CommandType = CommandType.StoredProcedure;
+                //sqlComm.CommandType = CommandType.StoredProcedure; !
                 //sqlCommand.CommandType = CommandType.StoredProcedure;
                 // SqlDataReader dataReader = sqlComm.ExecuteReader();
                 SqlDataAdapter dataAdapter = new SqlDataAdapter();
