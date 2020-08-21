@@ -72,9 +72,7 @@ namespace BCLoginRegistrationForm
                 SqlConnection sqlConn = new SqlConnection("Data Source=DESKTOP-0997K4M;Initial Catalog=UserRegistrationDB;Integrated Security=True");
                 SqlCommand sqlComm = new SqlCommand("SELECT * FROM tblUser WHERE EmailAddress = @EmailAddress and Password = @Password", sqlConn);
                 sqlConn.Open();
-                //sqlComm.CommandType = CommandType.StoredProcedure;
-                //sqlCommand.CommandType = CommandType.StoredProcedure;
-                // SqlDataReader dataReader = sqlComm.ExecuteReader();
+                
                 SqlDataAdapter dataAdapter = new SqlDataAdapter();
                 DataTable dataTable = new DataTable();
                 sqlComm.Parameters.AddWithValue("@EmailAddress", TxtUsername.Text); 
@@ -104,7 +102,8 @@ namespace BCLoginRegistrationForm
                 }
                 else
                 {
-                    MessageBox.Show("Username or Password incorrect. /n Try Agian","LOGIN FORM FOR BC", MessageBoxButtons.OK, MessageBoxIcon.Stop) ;
+                    //show error message
+                    MessageBox.Show("Username or Password incorrect. Try Agian","Login form", MessageBoxButtons.OK, MessageBoxIcon.Stop) ;
                     TxtUsername.Focus();
                     TxtUsername.SelectAll();
                 }
