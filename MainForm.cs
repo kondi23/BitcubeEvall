@@ -20,7 +20,7 @@ namespace BCLoginRegistrationForm
 
         private void lblMain_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("WELCOME TO THE SITE'S PROFILE PAGE", "PROFILE FORM");
         }
 
         private void BCMainForm_Load(object sender, EventArgs e)
@@ -45,13 +45,6 @@ namespace BCLoginRegistrationForm
 
         }
 
-        private void lnklblProfile_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            this.Close();
-            Profile profile = new Profile();
-            profile.Show();
-            this.Hide();
-
-        }
+ 
     }
 }

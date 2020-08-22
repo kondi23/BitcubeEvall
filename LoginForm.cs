@@ -96,7 +96,7 @@ namespace BCLoginRegistrationForm
                     mainForm.ShowDialog();
                     mainForm = null;
 
-                    this.Show();
+                    this.Hide();
                     this.TxtUsername.Select();
 
                 }
@@ -122,7 +122,6 @@ namespace BCLoginRegistrationForm
             if (chckBoxRememberPass.Checked == true)
             {
                 Properties.Settings.Default.EmailAddress  = TxtUsername.Text;
-
                 Properties.Settings.Default.Save();
             }
 

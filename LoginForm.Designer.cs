@@ -127,11 +127,11 @@
             // chckBoxRememberPass
             // 
             this.chckBoxRememberPass.AutoSize = true;
-            this.chckBoxRememberPass.Location = new System.Drawing.Point(396, 143);
+            this.chckBoxRememberPass.Location = new System.Drawing.Point(370, 143);
             this.chckBoxRememberPass.Name = "chckBoxRememberPass";
-            this.chckBoxRememberPass.Size = new System.Drawing.Size(187, 24);
+            this.chckBoxRememberPass.Size = new System.Drawing.Size(192, 24);
             this.chckBoxRememberPass.TabIndex = 7;
-            this.chckBoxRememberPass.Text = "Remember Password";
+            this.chckBoxRememberPass.Text = "Remember Username";
             this.chckBoxRememberPass.UseVisualStyleBackColor = true;
             this.chckBoxRememberPass.CheckedChanged += new System.EventHandler(this.chckBoxRememberPass_CheckedChanged);
             // 

@@ -14,6 +14,11 @@ namespace BCLoginRegistrationForm
 {
     public partial class RegistrationForm : Form
     {
+        //hash Code
+        hashCode hash = new hashCode();
+
+
+
         public RegistrationForm()
         {
             InitializeComponent();
@@ -95,8 +100,8 @@ namespace BCLoginRegistrationForm
 
 
                     clearControls();
-                    BCMainForm mainForm = new BCMainForm();
-                    mainForm.Show();
+                    LoginForm login = new LoginForm();
+                    login.Show();
                     this.Hide();
 
                 }
@@ -116,13 +121,13 @@ namespace BCLoginRegistrationForm
         private void chkShowHide_CheckedChanged(object sender, EventArgs e)
         {
             //show password char
-            if (chkShowHide.Checked)
+            if (chkShowHide.Checked == true)
             {
-                txtPassword.UseSystemPasswordChar = true;
+                txtPassword.UseSystemPasswordChar = false;
             }
             else
             {
-                txtPassword.UseSystemPasswordChar = false;
+                txtPassword.UseSystemPasswordChar = true;
             }
         }
 

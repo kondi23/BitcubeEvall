@@ -16,5 +16,24 @@ namespace BCLoginRegistrationForm
         {
             InitializeComponent();
         }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            //redirects to login form
+            this.Close();
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
+            this.Hide();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            //redirect to profile page
+            this.Close();
+            BCMainForm profilePage = new BCMainForm();
+            profilePage.Show();
+            this.Hide();
+
+        }
     }
 }
