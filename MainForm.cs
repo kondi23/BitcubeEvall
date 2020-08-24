@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Configuration;
 
 
 namespace BCLoginRegistrationForm
@@ -25,7 +27,7 @@ namespace BCLoginRegistrationForm
 
         private void BCMainForm_Load(object sender, EventArgs e)
         {
-       
+         
         }
 
         private void lnklblLogOut_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -45,6 +47,23 @@ namespace BCLoginRegistrationForm
 
         }
 
- 
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            //Edit profile
+            this.Hide();
+            frmChangeProfile changeProfile = new frmChangeProfile();
+            changeProfile.Show();
+
+        }
+
+
+
+        private void btnChangePassword_Click_1(object sender, EventArgs e)
+        {
+            frmChangePassword changePassword = new frmChangePassword();
+            changePassword.Show();
+            this.Hide();
+        }
     }
 }
