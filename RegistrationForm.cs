@@ -149,5 +149,25 @@ namespace BCLoginRegistrationForm
 
             }
         }
+
+        private void txtConfirmPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtEmailAddress_TextChanged(object sender, EventArgs e)
+        {
+            if (RegEx.checkEmail(txtEmailAddress.Text.ToString()))
+            {
+
+                lblEmailInvalid.Text = "Valid Email";
+                btnSubmit.Enabled = true;
+            }
+            else
+            {
+                lblEmailInvalid.Text = "Invalid Email";
+                btnSubmit.Enabled = false;
+            }
+        }
     }
 }

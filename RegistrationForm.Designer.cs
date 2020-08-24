@@ -70,6 +70,7 @@
             this.txtEmailAddress.Name = "txtEmailAddress";
             this.txtEmailAddress.Size = new System.Drawing.Size(325, 26);
             this.txtEmailAddress.TabIndex = 2;
+            this.txtEmailAddress.TextChanged += new System.EventHandler(this.txtEmailAddress_TextChanged);
             // 
             // txtContact
             // 
@@ -96,6 +97,7 @@
             this.txtConfirmPassword.Size = new System.Drawing.Size(325, 33);
             this.txtConfirmPassword.TabIndex = 5;
             this.txtConfirmPassword.UseSystemPasswordChar = true;
+            this.txtConfirmPassword.TextChanged += new System.EventHandler(this.txtConfirmPassword_TextChanged);
             // 
             // label10
             // 
